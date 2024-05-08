@@ -1,11 +1,25 @@
-[gd_scene load_steps=2 format=3 uid="uid://dwrh7or6aypdn"]
+[gd_scene load_steps=5 format=3 uid="uid://dwrh7or6aypdn"]
 
 [ext_resource type="PackedScene" uid="uid://bc6aaoxetwtwy" path="res://Prefabs/fish_base.tscn" id="1_0woln"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_22i1h"]
+sky_top_color = Color(0.424999, 0.429018, 0.971378, 1)
+sky_horizon_color = Color(0.0689043, 0.0164592, 0.213497, 1)
+ground_bottom_color = Color(0.0307657, 0.00617895, 0.125892, 1)
+ground_horizon_color = Color(0.0705882, 0.0156863, 0.211765, 1)
+
+[sub_resource type="Sky" id="Sky_kp1f4"]
+sky_material = SubResource("ProceduralSkyMaterial_22i1h")
+
+[sub_resource type="Environment" id="Environment_3774m"]
+background_mode = 2
+sky = SubResource("Sky_kp1f4")
 
 [node name="world" type="Node3D"]
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.618957, 0.276974, -0.734968, -9.10369e-09, 0.935758, 0.352642, 0.785425, -0.21827, 0.579194, -2.70435, 3.26508, 1.50986)
+environment = SubResource("Environment_3774m")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.554003, 0.307904, -0.773483, -0.029447, 0.935758, 0.35141, 0.831994, -0.171906, 0.527479, -2.15735, 4.9275, 1.20447)
