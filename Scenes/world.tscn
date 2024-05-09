@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dwrh7or6aypdn"]
+[gd_scene load_steps=6 format=3 uid="uid://dwrh7or6aypdn"]
 
 [ext_resource type="PackedScene" uid="uid://bc6aaoxetwtwy" path="res://Prefabs/fish_base.tscn" id="1_0woln"]
+[ext_resource type="PackedScene" uid="uid://b3y5gi2gxs6r0" path="res://Prefabs/jellyfish_base.tscn" id="2_auhfl"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_22i1h"]
 sky_top_color = Color(0.424999, 0.429018, 0.971378, 1)
@@ -28,3 +29,11 @@ transform = Transform3D(0.554003, 0.307904, -0.773483, -0.029447, 0.935758, 0.35
 
 [node name="FishBase2" parent="." instance=ExtResource("1_0woln")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6571, 0, 3.35505)
+
+[node name="Jellyfish_Base" parent="." instance=ExtResource("2_auhfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.13493, 0, -5.37673)
+
+[node name="Jellyfish_Base2" parent="." instance=ExtResource("2_auhfl")]
+transform = Transform3D(0.834377, 0, -0.551194, 0, 1, 0, 0.551194, 0, 0.834377, 8.6058, 1.04883, -4.35816)
+speed = 0.55
+limit = 1.2

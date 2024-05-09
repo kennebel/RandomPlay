@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3y5gi2gxs6r0"]
+
+[ext_resource type="Script" path="res://Scripts/Jellyfish_Base.gd" id="1_stfa2"]
+[ext_resource type="PackedScene" uid="uid://cste1gtkpku8u" path="res://Models/Jellyfish.glb" id="2_v7ig8"]
+
+[node name="Jellyfish_Base" type="Node3D"]
+script = ExtResource("1_stfa2")
+
+[node name="Jellyfish" parent="." instance=ExtResource("2_v7ig8")]
