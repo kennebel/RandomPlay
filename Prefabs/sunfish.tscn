@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cl1ofcyie30fw"]
+
+[ext_resource type="PackedScene" uid="uid://bj3wtdkcreiso" path="res://Models/SunFish.glb" id="1_t53xv"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="SunFish" parent="." instance=ExtResource("1_t53xv")]
