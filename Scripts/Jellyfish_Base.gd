@@ -7,7 +7,7 @@ var driftAway: Vector2
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	print("Jelly man!")
+	#print("Jelly man!")
 	startY = position.y
 	driftAway.x = position.x
 	driftAway.y = position.z
