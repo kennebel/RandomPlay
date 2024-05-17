@@ -19,12 +19,13 @@ func GetNextID() -> int:
 	ItemCount += 1
 	return ItemCount
 
-func RegisterItem(item: FlockBase):
-	if !Items.has(item.ItemType):
-		Items[item.ItemType] = {}
-	if (!Items[item.ItemType].has(item.ID)):
-		Items[item.ItemType][item.ID]
+func RegisterItem(newReg: FlockBase):
+	if !Items.has(newReg.ItemType):
+		Items[newReg.ItemType] = {}
+	if (!Items[newReg.ItemType].has(newReg.ID)):
+		Items[newReg.ItemType][newReg.ID] = newReg
 	
 
-func UnregisterItem(item: FlockBase):
-	pass
+func UnregisterItem(oldReg: FlockBase):
+	if Items.has(oldReg.ItemType) and Items[oldReg.ItemType].has(oldReg.ID):
+		Items[oldReg.ItemType].erase(oldReg.ID)
