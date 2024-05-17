@@ -14,3 +14,7 @@ config/name="RandPlay"
 run/main_scene="res://Scenes/world.tscn"
 config/features=PackedStringArray("4.2")
 config/icon="res://icon.svg"
+
+[autoload]
+
+RGlobal="*res://Scripts/RandGlobal.gd"
