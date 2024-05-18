@@ -29,3 +29,13 @@ func RegisterItem(newReg: FlockBase):
 func UnregisterItem(oldReg: FlockBase):
 	if Items.has(oldReg.ItemType) and Items[oldReg.ItemType].has(oldReg.ID):
 		Items[oldReg.ItemType].erase(oldReg.ID)
+
+func GroupCount(forType: ItemType) -> int:
+	if Items.has(forType):
+		return Items[forType].size
+	return 0
+
+func GroupItems(forType: ItemType):
+	if Items.has(forType):
+		return Items[forType]
+	return {}

@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://dwrh7or6aypdn"]
+[gd_scene load_steps=8 format=3 uid="uid://dwrh7or6aypdn"]
 
 [ext_resource type="PackedScene" uid="uid://bc6aaoxetwtwy" path="res://Prefabs/fish_base.tscn" id="1_0woln"]
+[ext_resource type="Script" path="res://Scenes/RandCamera3D.gd" id="1_4bple"]
 [ext_resource type="PackedScene" uid="uid://b3y5gi2gxs6r0" path="res://Prefabs/jellyfish_base.tscn" id="2_auhfl"]
 [ext_resource type="PackedScene" uid="uid://cl1ofcyie30fw" path="res://Prefabs/sunfish.tscn" id="3_bpykx"]
 
@@ -22,6 +23,7 @@ sky = SubResource("Sky_kp1f4")
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.618957, 0.276974, -0.734968, -9.10369e-09, 0.935758, 0.352642, 0.785425, -0.21827, 0.579194, -2.70435, 3.26508, 1.50986)
 environment = SubResource("Environment_3774m")
+script = ExtResource("1_4bple")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.554003, 0.307904, -0.773483, -0.029447, 0.935758, 0.35141, 0.831994, -0.171906, 0.527479, -2.15735, 4.9275, 1.20447)

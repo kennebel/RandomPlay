@@ -1,7 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://cl1ofcyie30fw"]
+[gd_scene load_steps=3 format=3 uid="uid://cl1ofcyie30fw"]
 
+[ext_resource type="Script" path="res://Scripts/FlockBase.gd" id="1_htihh"]
 [ext_resource type="PackedScene" uid="uid://bj3wtdkcreiso" path="res://Models/SunFish.glb" id="1_t53xv"]
 
 [node name="Node3D" type="Node3D"]
+script = ExtResource("1_htihh")
+ItemType = 2
+Speed = 1.0
+Energetic = 0.5
 
 [node name="SunFish" parent="." instance=ExtResource("1_t53xv")]
