@@ -1,10 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://bc6aaoxetwtwy"]
 
-[ext_resource type="Script" path="res://Scripts/FlockBase.gd" id="1_0ywvu"]
+[ext_resource type="Script" path="res://Scripts/FishBase.gd" id="1_hl0dk"]
 [ext_resource type="PackedScene" uid="uid://dwu03qf5jnvtl" path="res://Models/Fish.glb" id="2_676c7"]
 
 [node name="Fish_Base" type="Node3D"]
-script = ExtResource("1_0ywvu")
+script = ExtResource("1_hl0dk")
 ItemType = 1
 
-[node name="Fish" parent="." instance=ExtResource("2_676c7")]
+[node name="Model" parent="." instance=ExtResource("2_676c7")]

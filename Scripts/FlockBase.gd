@@ -26,11 +26,13 @@ func _exit_tree():
 	RGlobal.UnregisterItem(self)
 
 func _process(delta):
-	#self.rotate(Vector3.UP, delta*Speed*-0.25)
+	DoMovement(delta)
+
+# User functions
+func DoMovement(delta:float):
 	DoFlocking()
 	self.translate_object_local(Vector3.FORWARD * delta * Speed)
 
-# User functions
 func DoFlocking():
 	#int         j;
 	#int         N;      // Number of neighbors
