@@ -41,5 +41,6 @@ transform = Transform3D(0.834377, 0, -0.551194, 0, 1, 0, 0.551194, 0, 0.834377, 
 speed = 0.55
 limit = 1.2
 
-[node name="Node3D" parent="." instance=ExtResource("3_bpykx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.38272, 0, 0.620957)
+[node name="SunfishBase" parent="." instance=ExtResource("3_bpykx")]
+transform = Transform3D(0.550466, 0, 0.834857, 0, 1, 0, -0.834857, 0, 0.550466, 15.6593, 0, 0.620957)
+SwimLimit = 0.15
